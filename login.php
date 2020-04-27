@@ -6,7 +6,7 @@
 <html>
 <head>
     <title>User registration system using PHP and MySQL</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     </head>
     <body>
     <header>
@@ -29,10 +29,11 @@
             </div>
         </header>
 
-        <div class="header2">
+        <div class="formheader">
             <h2>Login</h2>
         </div>
 
+        <div class="loginform">
         <form method="post" action="calculator.php"> 
         <?php include('errors.php');?>
             <div class="input-group">
@@ -50,18 +51,14 @@
                 </div>
                 <p>Not yet a member?<a href="register.php"> Sign up</a>
                 </p>
-
+        </div>
                        
         </form>
+        <br>
 
-           
-                
-
-       
-
-        <footer>
+    <footer>
             <p>Car Insurance Web Design, Copyright &copy; 2020</p>
-      </footer>
+    </footer>
 
         </body>
         </html>

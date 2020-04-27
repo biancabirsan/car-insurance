@@ -9,7 +9,7 @@ session_start();
 	<title>Home</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
    
 
 </head>
@@ -35,13 +35,13 @@ session_start();
             </nav>
         </header>
 
-       <div class="header2">
+       <div class="formheader">
             <h2>Get a quick quote!</h2>
-        </div>
-
-        <form  method="post"> 
+       </div>
+        
+        <form  method="post" div class="loginform"> 
        
-        <label><strong>Find your car by make and model</strong></label><br>
+        <strong><p>Find your car by make and model</strong></p>
 
 
         Car <br><select name="make" div class="custom-select" <?php $_SESSION["make"]=$_POST['make'];?>  value="<?php $_POST['make']?>" formaction="index.php" method="submit"  onchange='if(this.value != 0) { this.form.submit(); }'>
@@ -113,10 +113,9 @@ session_start();
                         <?php endif; ?>
                        
         </select>
-        </select>
         </div>
             
-             Vehicle value<br> <input type="text" div class="custom-select" name="price"  value="<?php $_POST['price']?>"></div>
+        Vehicle value<br> <input type="text" div class="custom-select" name="price"  value="<?php $_POST['price']?>"></div>
         
 
         Engine type<br><select name="engine" div class="custom-select" value="<?php $_POST['engine']?>">
@@ -167,12 +166,18 @@ session_start();
         <input type = "radio" name = "claim" value = "Yes"  value="<?php $_POST['claim']?>"> Yes
         <br> 
             
-        <div class="input-group"  id="results">
-            <button type="submit"  value='submit' formaction="details.php" class="btn">Submit</button>
-            </div> 
-            
+    <div class="input-group"  id="results">
+        <button type="submit"  value='submit' formaction="details.php" class="btn">Submit</button>
         
-
+    </div>
+    
+    </form>
+    <br>
+    
+     <footer>
+       <p>Car Insurance Web Design, Copyright &copy; 2020</p>
+      </footer>
+            
 		
 </body>
 </html>

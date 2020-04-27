@@ -12,7 +12,7 @@ session_start();
 	<title>Home</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     
 </head>
 <body>
@@ -45,11 +45,11 @@ session_start();
             </nav>
             </header>
 
-            <div class="header2">
+            <div class="formheader">
             <h2>Get a quick quote!</h2>
         </div>
 
-        <form method="post"> 
+        <form method="post" div class="loginform"> 
        
         <label><strong>Find your car by make and model</strong></label><br>
 
@@ -182,8 +182,15 @@ session_start();
         <div class="input-group"  id="results">
             <button type="submit"  value='submit' formaction="result.php" class="btn">Submit</button>
             </div> 
-            
-            
-           
 
+        </div>
         </form>
+        <br>
+    
+    <footer>
+       <p>Car Insurance Web Design, Copyright &copy; 2020</p>
+    </footer>		
+
+ </body>
+
+</html>

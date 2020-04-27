@@ -12,7 +12,7 @@ session_start();
 	<title>Home</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     
 </head>
 <body>
@@ -45,12 +45,10 @@ session_start();
             </nav>
         </header>
 
-        
-
-        <div class="header2">
+        <div class="formheader">
             <h2>Your details</h2>
         </div>
-        <form method="post"> 
+        <form method="post" div class="loginform"> 
        
       
         <?php
@@ -100,8 +98,13 @@ session_start();
         <div class="input-group">
         <button type="submit" name="reset" formaction="calculator.php" class="btn">Get the quote</button>
         </div>
-               
+</div>       
 </form>
+
+<footer>
+       <p>Car Insurance Web Design, Copyright &copy; 2020</p>
+</footer>
+            
 
 </body>
 

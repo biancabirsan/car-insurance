@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>User registration system using PHP and MySQL</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     </head>
     <body>
     <header>
@@ -25,10 +25,11 @@
             </div>
         </header>
 
-    <div class="header2">
+    <div class="formheader">
             <h2>Register</h2>
         </div>
 
+        <div class="loginform">
         <form method="post" action="register.php"> 
         <!--display--validation errors here--->
         <?php include('errors.php'); ?>
@@ -53,10 +54,13 @@
                 </div>
                 <p>Already a member? <a href="login.php">Sign in</a>
                 </p>
-        
+
+        </div>      
         </form>
+        <br>
+
         <footer>
-            <p>Car Insurance Web Design, Copyright &copy; 2020</p>
+           <p>Car Insurance Web Design, Copyright &copy; 2020</p>
       </footer>
 
     </body>

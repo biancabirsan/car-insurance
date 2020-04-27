@@ -12,7 +12,7 @@ session_start();
 	<title>Home</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     
 </head>
 <body>
@@ -38,11 +38,11 @@ session_start();
         </header>
 
         
-        <div class="header2">
+        <div class="formheader">
             <h2>Your details</h2>
         </div>
-        <form method="post"> 
-       
+
+        <form method="post" div class="loginform"> 
        
         <?php
       // First send the variables from page 1 to page 2(with the values) using POST method
@@ -60,44 +60,43 @@ session_start();
 
 
 
-            echo ("Your car is ".$_SESSION['make']."<br />\n");
-            echo ("Your car model is ".$_SESSION["model"]."<br />\n");
-            echo ("The price of car is ".$_SESSION['price']."<br />\n");
-            echo ("Your car engine type is ".$_SESSION["engine"]."<br />\n");
-            echo ("Your car engine size is ".$_SESSION['size']."<br />\n");
-            echo ("The area you keep the car is ".$_SESSION['area']."<br />\n");
-            echo ("The car is kept in a garage ".$_SESSION['garage']."<br />\n");
-            echo ("Driver age ".$_SESSION['age']."<br />\n");
-            echo ("No claim discount ".$_SESSION['claim']."<br />\n");
-
-
+        echo ("Your car is ".$_SESSION['make']."<br />\n");
+        echo ("Your car model is ".$_SESSION["model"]."<br />\n");
+        echo ("The price of car is ".$_SESSION['price']."<br />\n");
+        echo ("Your car engine type is ".$_SESSION["engine"]."<br />\n");
+        echo ("Your car engine size is ".$_SESSION['size']."<br />\n");
+        echo ("The area you keep the car is ".$_SESSION['area']."<br />\n");
+        echo ("The car is kept in a garage ".$_SESSION['garage']."<br />\n");
+        echo ("Driver age ".$_SESSION['age']."<br />\n");
+        echo ("No claim discount ".$_SESSION['claim']."<br />\n");
 ?>
  
 
-<?php
-
-
- $make = $_REQUEST['make'];
- $model = $_REQUEST['model'];
- $price = $_REQUEST['price'];
- $engine= $_REQUEST['engine'];
- $size = $_REQUEST['size'];
- $area = $_REQUEST['area'];
- $garage = $_REQUEST['garage'];
- $age = $_REQUEST['age'];
- $claim = $_REQUEST['claim'];
- 
-?>
+        <?php
+            $make = $_REQUEST['make'];
+            $model = $_REQUEST['model'];
+            $price = $_REQUEST['price'];
+            $engine= $_REQUEST['engine'];
+            $size = $_REQUEST['size'];
+            $area = $_REQUEST['area'];
+            $garage = $_REQUEST['garage'];
+            $age = $_REQUEST['age'];
+            $claim = $_REQUEST['claim'];
+            
+        ?>
 
  
 <div class="input-group">
                 <button type="submit" name="login" formaction="login.php" class="btn">Login</button>
                 </div>
-                <p>Not yet a member?<a href="register.php"> Sign up</a>
-                </p>
+                <p>Not yet a member?<a href="register.php"> Sign up</a></p>
+</div>           
 </form>
 
-
+<footer>
+            <p>Car Insurance Web Design, Copyright &copy; 2020</p>
+    </footer>
 
 </body>
+
 </html>

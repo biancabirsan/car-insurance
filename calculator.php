@@ -1,7 +1,6 @@
 <?php  include('server.php');
 error_reporting(E_ALL ^ E_NOTICE);
 session_start();
-
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +9,7 @@ session_start();
 	<title>Home</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     
@@ -222,15 +221,17 @@ session_start();
 
 <div style="clear:both"></div>
 
-    <a href="resetvalues.php" div class="resetbutton" class="button">Recalculate the insurance cost</a>
-    
-</body>
+
+<input type="button" div class="resetbutton" onclick="window.location.href = 'resetvalues.php';" value="Recalculate the insurance cost"/>
+</div>
+<br>
 
 
 <footer>
-            <p>Car Insurance Web Design, Copyright &copy; 2020</p>
+  <p>Car Insurance Web Design, Copyright &copy; 2020</p>
 </footer>
 
+</body>
 
 
 </html>
