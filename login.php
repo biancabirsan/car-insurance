@@ -34,7 +34,7 @@
         </div>
 
         <div class="loginform">
-        <form method="post" action="calculator.php"> 
+        <form method="post"> 
         <?php include('errors.php');?>
             <div class="input-group">
                 <label>Username</label>
@@ -54,7 +54,7 @@
         </div>
                        
         </form>
-        <br>
+        
 
     <footer>
             <p>Car Insurance Web Design, Copyright &copy; 2020</p>
